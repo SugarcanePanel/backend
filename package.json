@@ -9,8 +9,21 @@
   },
   "license": "MIT",
   "packageManager": "yarn@4.9.1",
+  "main": "./bin/app.js",
+  "scripts": {
+    "lint": "eslint",
+    "compile": "tsc",
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "winston": "^3.17.0"
+  },
   "devDependencies": {
+    "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "eslint-config-sheriff": "^27.0.0",
     "typescript": "^5.8.3"
   }
 }
